@@ -4,6 +4,8 @@ const title = document.getElementById("title");
 const description = document.getElementById("description");
 const price = document.getElementById("price");
 const city = document.getElementById("city");
+const burgerBtn = document.getElementById("burger-button");
+const mobileNav = document.getElementById("mobile-nav");
 
 btn.addEventListener("click", () => {
   if (!price.value) {
@@ -46,4 +48,7 @@ btn.addEventListener("click", () => {
     .catch((error) => {
       console.error("Error:", error);
     });
+});
+burgerBtn.addEventListener("click", () => {
+  mobileNav.classList.toggle("active");
 });

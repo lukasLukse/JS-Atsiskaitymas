@@ -1,8 +1,8 @@
 import { fetchCars } from "./utils/fetch.js";
 
 const cardsWrapper = document.getElementById("cards-wrapper");
-const burgerButton = document.getElementById("burger-button");
-const navigation = document.getElementById("navigation");
+const burgerBtn = document.getElementById("burger-button");
+const mobileNav = document.getElementById("mobile-nav");
 
 const buildCards = (data) => {
   cardsWrapper.innerHTML = "";
@@ -35,6 +35,6 @@ const cars = await fetchCars();
 cars.sort((a, b) => a.price - b.price);
 buildCards(cars);
 
-burgerButton.addEventListener("click", () => {
-  navigation.classList.toggle("active");
+burgerBtn.addEventListener("click", () => {
+  mobileNav.classList.toggle("active");
 });

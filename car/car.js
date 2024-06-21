@@ -6,6 +6,8 @@ const price = document.getElementById("price");
 const description = document.getElementById("description");
 const city = document.getElementById("city");
 const deleteBtn = document.getElementById("deleteBtn");
+const burgerBtn = document.getElementById("burger-button");
+const mobileNav = document.getElementById("mobile-nav");
 
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
@@ -24,5 +26,9 @@ img.src = car.imgUrl;
 price.textContent = formatter.format(car.price);
 description.textContent = car.description;
 city.textContent = car.city;
+
+burgerBtn.addEventListener("click", () => {
+  mobileNav.classList.toggle("active");
+});
 
 deleteBtn.addEventListener("click", () => deleteCar(id));
