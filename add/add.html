@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="add.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Autoplius</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="/index.html">HOME</a>
+            <a href="./add.html">ADD CAR</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <div id="form" class="form">
+        <input id="title" placeholder="title" />
+        <input id="description" placeholder="description" />
+        <select id="city" class="city">
+          <option value="">Select your location:</option>
+          <option value="Kaunas">Kaunas</option>
+          <option value="Klaipėda">Klaipėda</option>
+          <option value="Vilnius">Vilnius</option>
+        </select>
+        <input id="price" placeholder="price" />
+        <input id="imgUrl" placeholder="imgUrl" />
+        <button id="submit-btn">SUBMIT!</button>
+        <p id="msg" class="msg"></p>
+      </div>
+    </section>
+    <script defer type="module" src="./add.js"></script>
+  </body>
+</html>

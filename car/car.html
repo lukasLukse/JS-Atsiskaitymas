@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autoplius</title>
+    <link rel="stylesheet" href="./car.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Autoplius</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="/index.html">HOME</a>
+            <a href="../add/add.html">ADD CAR</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="wrapper" class="wrapper">
+      <div id="content-wrapper" class="content-wrapper">
+        <img id="img" src="" alt="Model Image" />
+        <label for="title">Model:</label>
+        <h1 id="title"></h1>
+        <label for="price">Price :</label>
+        <h2 id="price"></h2>
+        <label for="description">Description:</label>
+        <h4 id="description"></h4>
+        <label for="city">Location :</label>
+        <h4 id="city"></h4>
+        <button id="deleteBtn" class="deleteBtn">DELETE YOUR POST!</button>
+        <p id="msg" style="display: none"></p>
+      </div>
+    </section>
+    <script defer type="module" src="../car/car.js"></script>
+  </body>
+</html>
